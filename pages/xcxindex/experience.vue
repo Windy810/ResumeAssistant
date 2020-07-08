@@ -1,0 +1,116 @@
+<template>
+	<view>
+		<cu-custom bgColor="bg-gradual-blue" :isBack="false"><block slot="backText">返回</block><block slot="content">经验分享</block></cu-custom>
+		<view class="cu-card case" :class="isCard?'no-card':''">
+			<view class="cu-item shadow">
+				<view class="image">
+					<image src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3993180157,2007227979&fm=11&gp=0.jpg"
+					 mode="widthFix"></image>
+					<view class="cu-tag bg-blue">热读</view>
+					<view class="cu-bar bg-shadeBottom"> <text class="text-cut">求职小技巧：你应该在求职前注意这几个小原则</text></view>
+				</view>
+				<view class="cu-list menu-avatar">
+					<view class="cu-item">
+						<view class="cu-avatar round lg" style="background-image:url(http://img3.imgtn.bdimg.com/it/u=1368451564,780267377&fm=11&gp=0.jpg);"></view>
+						<view class="content flex-sub">
+							<view class="text-grey">东北林大 李明</view>
+							<view class="text-gray text-sm flex justify-between">
+								十天前
+								<view class="text-gray text-sm">
+									<text class="cuIcon-attentionfill margin-lr-xs"></text> 10
+									<text class="cuIcon-appreciatefill margin-lr-xs"></text> 20
+									<text class="cuIcon-messagefill margin-lr-xs"></text> 30
+								</view>
+							</view>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class="cu-card article margin-top" :class="isCard?'no-card':''">
+			<view class="cu-item shadow">
+				<view class="title"><view class="text-cut">简历真的很重要</view></view>
+				<view class="content">
+					<image src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2030320799,1347256038&fm=11&gp=0.jpg"
+					 mode="aspectFill"></image>
+					<view class="desc">
+						<view class="text-content"> 今时今日，作为一个应届生，必须认清楚一件事情：用人单位选择把offer给你，并不是因为你的“能力”，而是因为你身上的其他“可能性”。而在刚刚进入职场的半年到一年时间内，你需要关注的是自己的成长速度，而不是薪水的涨幅</view>
+						<view>
+							<view class="cu-tag bg-blue light sm round">沟通技巧</view>
+							<view class="cu-tag bg-green light sm round">简历</view>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class="cu-card article" :class="isCard?'no-card':''">
+			<view class="cu-item shadow">
+				<view class="title"><view class="text-cut">努力不浪费 校招全都会</view></view>
+				<view class="content">
+					<image src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2250254747,2258156873&fm=26&gp=0.jpg"
+					 mode="aspectFill"></image>
+					<view class="desc">
+						<view class="text-content">我想分享给应届生的经验就是，求职路上有一个最大的错误认知：努力就会有回报</view>
+						<view>
+							<view class="cu-tag bg-purple light sm round">春招</view>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class="padding flex flex-wrap justify-between align-center bg-white">
+			<view></view>
+			<button class="cu-btn round center bg-blue">查看全部</button>
+			<view></view>
+		</view>
+		
+		<view class="cu-bar tabbar foot" style="background-color: #333333">
+			
+			<view class="action text-gray">
+				<view class="cuIcon-homefill" @click="zNavigate('xcxindex/xcxindex')" ></view> 首页
+			</view>
+			
+			<view class="action text-grey">
+				<view class="cuIcon-text" @click="zNavigate('xcxindex/jianli')"></view> 测评
+			</view>
+			
+			<view class="action text-gray add-action">
+				<button class="cu-btn cuIcon-add bg-blue shadow" @click="zNavigate('resume/index/index')"></button>
+				创建
+			</view>
+			<view class="action text-blue">
+				<view class="cuIcon-friendfill" @click="zNavigate('xcxindex/experience')">
+					<!--<view class="cu-tag badge">99</view>-->
+				</view>
+				经验
+			</view>
+			<view class="action text-grey">
+				<view class="cuIcon-friendfill" @click="zNavigate('index/index')">
+					<!--<view class="cu-tag badge">99</view>-->
+				</view>
+				我的
+			</view>
+		</view>
+	</view>
+</template>
+
+<script>
+	export default {
+		data() {
+			return {
+				isCard: true
+			}
+		},
+		methods: {
+			zNavigate(id) {
+				uni.navigateTo({
+					url:`/pages/${id}`
+				})
+			}
+		}
+	}
+</script>
+
+<style>
+
+</style>

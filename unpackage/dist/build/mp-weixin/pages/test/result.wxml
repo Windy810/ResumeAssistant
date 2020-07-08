@@ -1,0 +1,4 @@
+<view><cu-custom class="text-white bg-gradual-blue" vue-id="b9c4c856-1" isBack="{{true}}" bind:__l="__l" vue-slots="{{['backText','content']}}"><view slot="backText">返回</view><view slot="content">测试结果</view></cu-custom>
+<image src="../../static/imgs/result.jpg" mode="widthFix" style="width:100%;"></image></view>
+<!--
+<jyf-parser class="vue-ref" vue-id="b9c4c856-2" domain="https://6874-html-foe72-1259071903.tcb.qcloud.la" gesture-zoom lazy-load selectable show-with-animation use-anchor data-ref="article" data-event-opts="{{[['^error',[['error']]],['^imgtap',[['imgtap']]],['^linkpress',[['linkpress']]],['^parse',[['parse']]],['^ready',[['ready']]]]}}" bind:error="__e" bind:imgtap="__e" bind:linkpress="__e" bind:parse="__e" bind:ready="__e" bind:__l="__l" vue-slots="{{['default']}}">加载中...</jyf-parser></view>->

@@ -1,0 +1,17 @@
+{
+  "name": "xcx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "prettier": "^1.12.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"resume":"resume init"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

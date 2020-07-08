@@ -1,0 +1,22 @@
+// 在本文件中可配置云数据库初始化，数据格式见：https://uniapp.dcloud.io/uniCloud/quickstart?id=db-init
+// 编写完毕后对本文件点右键，可按配置规则创建表和添加数据
+{
+    "collection_test": { // 集合（表名）
+        "data": [ // 数据
+           {
+                "_id": "da51bd8c5e37ac14099ea43a2505a1a5",
+               "name": "tom"
+           }
+        ],
+        "index": [{ // 索引
+            "IndexName": "index_a", // 索引名称
+            "MgoKeySchema": { // 索引规则
+                "MgoIndexKeys": [{
+                    "Name": "index", // 索引字段
+                    "Direction": "1" // 索引方向，1：ASC-升序，-1：DESC-降序，2dsphere：地理位置
+                }],
+                "MgoIsUnique": false // 索引是否唯一
+            }
+        }]
+    }
+}

@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/xcxindex/xcxindex",
+    "pages/resume/tResume/tResume",
+    "pages/resume/tResume/skills",
+    "pages/resume/tResume/summary",
+    "pages/resume/tResume/reward",
+    "pages/resume/tResume/school",
+    "pages/resume/tResume/work",
+    "pages/resume/tResume/basic",
+    "pages/resume/index/index",
+    "pages/test/test",
+    "pages/test/result",
+    "pages/xcxindex/jianli",
+    "pages/xcxindex/experience",
+    "pages/index/index"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#007AFF",
+    "backgroundColor": "#FFFFFF",
+    "navigationStyle": "custom"
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "sitemapLocation": "sitemap28.json"
+}
